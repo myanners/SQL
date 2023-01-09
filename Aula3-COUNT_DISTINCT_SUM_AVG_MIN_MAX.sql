@@ -58,4 +58,11 @@ SELECT
       MAX(Receita_Venda)
 FROM pedidos; 
 
-     
+-- Exemplo 4. Juntando as querys
+
+SELECT 
+	  SUM(Receita_Venda) AS 'Soma de Receita',
+      AVG(Receita_Venda) AS 'Média de Receita',
+      MIN(Receita_Venda) AS 'Menor Receita',
+      MAX(Receita_Venda) AS 'Maior Receita'
+FROM pedidos;     
